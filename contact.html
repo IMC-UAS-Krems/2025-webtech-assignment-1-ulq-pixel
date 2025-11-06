@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cv-section">
+            <h2>Get in Touch</h2>
+            <p>If youd like to reach out to me, feel free to use the contact form below or send me an email directly.</p>
+
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:stefanradev2006@gmail.com">stefanradev2006@gmail.com</a></p>
+                <p><strong>Phone:</strong> +359 87 761 5145</p>
+                <p><strong>Address:</strong> Sofia, Bulgaria</p>
+            </div>
+
+            <form action="mailto:stefanradev2006@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="1" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact me at <a href="mailto:stefanradev2006@gmail.com">stefanradev2006@gmail.com</a></p>
+        <p>All rights reserved © 2025 Stefan Radev</p>
+    </footer>
+</body>
+</html>

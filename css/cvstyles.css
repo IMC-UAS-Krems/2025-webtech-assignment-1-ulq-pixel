@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.85); 
+    z-index: -1;
+}
+
+header {
+    background-color: rgba(0, 64, 128, 0.9);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 4px solid #0a84ff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+nav li {
+    margin: 0.5rem 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: #0a84ff;
+    color: white;
+}
+
+.cv-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.cv-top {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cv-picture {
+    flex-shrink: 0;
+}
+
+.cv-photo-side {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cv-details {
+    flex: 1;
+}
+
+.cv-section h2 {
+    color: #0a84ff;
+    border-bottom: 2px solid #0a84ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.cv-section ul {
+    padding-left: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 64, 128, 0.9);
+    color: white;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #0a84ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
